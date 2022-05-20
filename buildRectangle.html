@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <body>
+<table>
+    <tr>
+        <th>Chiều dài </th>
+        <th>Chiều rộng </th>
+        <th>Màu</th>
+        <th>Độ rộng cạnh</th>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="number" id="height"></td>
+        <td><input type="number" id="width"></td>
+        <td><select id="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="black">Black</option>
+        </select></td>
+        <td><input type="number" id="lineWidth"></td>
+        <td><button onclick="drawRectangle()">Draw</button></td>
+    </tr>
+    <tr>
+        <td colspan="5"><canvas id="canvas" width="800" height="800"></canvas></td>
+        
+    </tr>
+</table>
+<canvas id="canvas1" width="1000" height="1000"></canvas>
+
 
 </body>
+<script src="buildRectangle.js"></script>
 </html>
