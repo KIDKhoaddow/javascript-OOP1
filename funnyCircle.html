@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Bán kính</th>
+        <th>Tọa độ x</th>
+        <th>Tọa độ y</th>
+        <th>Màu</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="radius"></td>
+        <td><input type="number" id="xPosition"></td>
+        <td><input type="number" id="yPosition"></td>
+        <td><select>
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+        </select></td>
+        <td>
+            <button onclick="createCircle()">Create</button>
+        </td>
+
+    </tr>
+</table>
+
+<canvas id="circleCanvas" width="1368px" height="768px" style="border: 1px solid black"></canvas>
+
+</body>
+</html>
