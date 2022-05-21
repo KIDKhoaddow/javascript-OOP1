@@ -1,7 +1,7 @@
 class Rectangle{
     constructor(height,width) {
-        this._height=height
-        this._width=width
+        this._height=parseInt(height) 
+        this._width=parseInt(width)
         this._area=this._height*this._width
         this._perimeter=(this._height+this._width)*2
     }
@@ -56,6 +56,7 @@ function drawRectangle(){
     let widthLine =document.getElementById("lineWidth").value;
     let rectangleA=new Rectangle(x,y)
     rectangleA.drawRectangle(0,0,"canvas",color,widthLine)
+    document.getElementById("result").innerText="Diện tích : "+rectangleA.Area+"\n"+"Chu vi là : "+rectangleA.Perimeter
 }
 
 
